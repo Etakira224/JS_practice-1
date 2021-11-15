@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>知識ゼロからのJavaScript入門 | Chapter3</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="header">
+  知識ゼロからのJavaScript入門
+</header>
+<section class="contents">
+</section>
+<script>
+  var person = {name: 'Ken', age: 14};
+  // alert('My name is ' + person.name + '. I.m ' + person.age + ' years old.');
+  person.name = 'Risa';
+  person.gender = 'woman';
+  // alert(person.name + ' is ' + person.gender);
+  person.display_gender = function() {
+    alert(person.name + ' is ' + person.gender);
+  }
+  person.display_gender();
+</script>
+</body>
+</html>
